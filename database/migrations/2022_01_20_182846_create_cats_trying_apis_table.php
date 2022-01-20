@@ -15,6 +15,7 @@ class CreateCatsTryingApisTable extends Migration
     {
         Schema::create('cats_trying_apis', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }

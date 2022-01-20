@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class cats_trying_api extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name'
+    ];
 }

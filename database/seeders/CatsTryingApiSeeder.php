@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use app\Models\cats_trying_api;
 use Illuminate\Database\Seeder;
 
 class CatsTryingApiSeeder extends Seeder
@@ -13,6 +14,9 @@ class CatsTryingApiSeeder extends Seeder
      */
     public function run()
     {
-        //
+        cats_trying_api::factory()
+            ->count(5)
+            ->create();
+        
     }
 }
